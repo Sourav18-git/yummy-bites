@@ -1,0 +1,36 @@
+/* Home Hero 1.0 */
+.hero_section {
+    position: relative;
+    background: 
+        url("../assets/hero/hero-1.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 170px;
+    padding-bottom: 90px;
+    /* filter: blur(8px);
+    -webkit-filter: blur(8px); */
+  }
+  .hero_section .price_badge {
+    background: url("../assets/hero/price-badge-yellow.png") no-repeat center
+      center;
+    background-size: cover;
+    position: absolute;
+    top: 140px;
+    right: 220px;
+    width: 180px;
+    height: 176px;
+    text-align: center;
+  }
+  .img-fluid{
+    width: 500px;
+    height: 700px;
+    /* position: absolute; */
+    top: 20px;
+    right: 70px;
+  }
+  .hero_section .badge_text {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
