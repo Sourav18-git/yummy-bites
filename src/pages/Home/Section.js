@@ -10,8 +10,8 @@ export default function Section() {
     return (
         <section className='hero_section'>
             <Container>
-                <Row>
-                    <Col lg={7} className='mb-5 mb-lg-0'>
+                <Row >
+                    <Col lg={7} className='mb-5 mb-lg-0' >
                         <div className="position-relative">
                             <img src={Biriyani} alt="hero" className='img-fluid' />
                             {/* <img src={plus} alt="hero" className='img-fluid' /> */}
@@ -25,14 +25,14 @@ export default function Section() {
                             </div>
                         </div>
                         </Col>
-                        <Col lg={5}>
+                        <Col lg={5} id='hero_section_Cotaniner2'>
                             <div className="hero_text text-center">
                                 <h1 className="text-white"> Special Biriyani </h1>
                                 <h2 className="text-white">With Free Coldrinks</h2>
                                 <p className="text-white pt-2 pb-4">
-                                    Feugiat primis ligula risus auctor laoreet augue egestas mauris
-                                    viverra tortor in iaculis pretium at magna mauris ipsum primis
-                                    rhoncus feugiat
+                                   Chicken biriyani is a rice dish with vegetables,chicken marinated in 
+                                   yogurt and warm spices such as turmeric, red chilli powder
+                                   and garam masala, flavorful and delicious
                                 </p>
                                 <Link to="/" className="btn order_now">
                                     Order Now

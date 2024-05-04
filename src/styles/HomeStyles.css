@@ -11,6 +11,7 @@
     /* filter: blur(8px);
     -webkit-filter: blur(8px); */
   }
+
   .hero_section .price_badge {
     background: url("../assets/hero/price-badge-yellow.png") no-repeat center
       center;
@@ -40,6 +41,9 @@
     top: 32%;
     right: 7px;
   }
+  #hero_section_Cotaniner2{
+    margin-top: 50px;
+}
   .hero_section .badge_text {
     width: 100%;
     position: absolute;
@@ -79,5 +83,18 @@
     .hero_section .hero_text h1{
         font-size: 5.5rem;
     }
-
+    .hero_section .price_badge{
+        top: 50px;
+    right: 20px;
+    }
+    #drinks_img{
+        position: absolute;
+        left: -20px;
+    }
+    #hero_section_Cotaniner2{
+        margin-top: -190px;
+    }
+    #plus_icon{
+        display: none;
+    }
   }
