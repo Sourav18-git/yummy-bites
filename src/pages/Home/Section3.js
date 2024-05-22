@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap'
 import chiken from '../../assets/menu/chicken_kosha.webp'
 import Bhature from '../../assets/menu/chole_bature.jpg'
@@ -96,24 +97,63 @@ const renderRatingIcons = (rating) => {
   return stars;
 };
 export default function Section3() {
+
+  const [filterData, setFilterData] = useState(mockData);
+  // setFilterData(mockData);
+  useEffect(() => {
+    const fetchFoodData = async () => {
+      //   console.log(mockData)
+      // setFilterData(mockData);
+      // console.log(filterData)
+    }
+    fetchFoodData();
+  }, []);
+  const searchFood = (e) => {
+    const searchValue = e.target.value;
+    console.log(searchValue);
+    // if (searchValue == '') {
+    //     setFilterData(null);
+    // }
+    // const filter = mockData?.filter((food) =>
+    //     food.name.toLowerCase().includes(searchValue.toLowerCase())
+    // );
+    // setFilterData(filter);
+  }
   return (
     <section className="menu_section">
       <Container>
         <Row>
           <Col lg={{ span: 8, offset: 2 }} className='text-center mb-5'>
             <h2>OUR MENUS</h2>
-            <p className="para">
-              Aliquam a augue suscipit, luctus neque purus ipsum neque undo
-              dolor primis libero tempus, blandit a cursus varius magna
+            <p className="para" style={{fontWeight:"900",display: "flex", marginLeft:"110px"}}>
+              Enjoy Every <p style={{color:"red",fontWeight:"900",marginLeft:"5px",marginRight:"5px",fontSize:"20px"}}>Tasty</p> &<p style={{color:"red",marginLeft:"5px",marginRight:"5px",fontSize:"20px"}}>Delightful</p>  Bite With Us
             </p>
 
           </Col>
         </Row>
         <Row>
-        <div className="search">
-                <input placeholder='Search Food' />
+          {/* <div className="search">
+            <input placeholder='Search Food' onChange={searchFood} />
+          </div> */}
+          <div class="container">
+
+            <div class="row height d-flex justify-content-center align-items-center">
+
+              <div class="col-md-6">
+
+                <div class="form">
+                  <i class="fa fa-search"></i>
+                  <input type="text" class="form-control form-input" placeholder="Search your favourite item..." />
+                    <span class="left-pan"><i class="fa fa-microphone"></i></span>
+                </div>
+
+              </div>
+
             </div>
-          {mockData.map((cardData, index) => (
+
+          </div>
+
+          {filterData.map((cardData, index) => (
             <Cards
               key={index}
               image={cardData.image}
