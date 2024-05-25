@@ -120,53 +120,73 @@ export default function Section3() {
     // setFilterData(filter);
   }
   return (
-    <section className="menu_section">
-      <Container>
-        <Row>
-          <Col lg={{ span: 8, offset: 2 }} className='text-center mb-5'>
-            <h2>OUR MENUS</h2>
-            <p className="para" style={{fontWeight:"900",display: "flex", marginLeft:"110px"}}>
-              Enjoy Every <p style={{color:"red",fontWeight:"900",marginLeft:"5px",marginRight:"5px",fontSize:"20px"}}>Tasty</p> &<p style={{color:"red",marginLeft:"5px",marginRight:"5px",fontSize:"20px"}}>Delightful</p>  Bite With Us
-            </p>
+    <section >
+      <section className="menu_section">
+        <Container>
+          <Row>
+            <Col lg={{ span: 8, offset: 2 }} className='text-center mb-5'>
+              <h2>OUR MENUS</h2>
+              <div className="para" style={{ fontWeight: "900", display: "flex",    justifyContent:" center" }}>
+              <p >
+                Enjoy Every
+              </p>
+              <p style={{ color: "red", fontWeight: "900", marginLeft: "5px", marginRight: "5px", fontSize: "20px" }}>Tasty</p>
+              <p>
+                &
+              </p>
+              <p style={{ color: "red", marginLeft: "5px", marginRight: "5px", fontSize: "20px" }}>Delightful</p>
+              <p> Bite With Us</p>
 
-          </Col>
-        </Row>
-        <Row>
-          {/* <div className="search">
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            {/* <div className="search">
             <input placeholder='Search Food' onChange={searchFood} />
           </div> */}
-          <div class="container">
+            <div class="container">
 
-            <div class="row height d-flex justify-content-center align-items-center">
+              <div class="row height d-flex justify-content-center align-items-center">
 
-              <div class="col-md-6">
+                <div class="col-md-6">
 
-                <div class="form">
-                  <i class="fa fa-search"></i>
-                  <input type="text" class="form-control form-input" placeholder="Search your favourite item..." />
+                  <div class="form">
+                    <i class="fa fa-search"></i>
+                    <input type="text" class="form-control form-input" placeholder="Search your favourite item..." />
                     <span class="left-pan"><i class="fa fa-microphone"></i></span>
+                  </div>
+
                 </div>
 
               </div>
 
             </div>
 
+            {filterData.map((cardData, index) => (
+              <Cards
+                key={index}
+                image={cardData.image}
+                rating={cardData.rating}
+                title={cardData.title}
+                paragraph={cardData.paragraph}
+                price={cardData.price}
+                renderRatingIcons={renderRatingIcons}
+
+              />
+            ))}
+          </Row>
+          <div>
+          {/* <button type="button" class="btn btn-primary" disabled> Previous</button>
+          <button>Next</button>
+       */}
+        <div className="next_Page">
+              <Link to="/">
+                
+                Exlpore more...
+              </Link>
+            </div>
           </div>
-
-          {filterData.map((cardData, index) => (
-            <Cards
-              key={index}
-              image={cardData.image}
-              rating={cardData.rating}
-              title={cardData.title}
-              paragraph={cardData.paragraph}
-              price={cardData.price}
-              renderRatingIcons={renderRatingIcons}
-
-            />
-          ))}
-        </Row>
-        <Row className="pt-5">
+             {/* <Row className="pt-5">
           <Col sm={6} lg={5}>
             <div className="ads_box ads_img1 mb-5 mb-md-0">
               <h4 className="mb-0">GET YOUR FREE</h4>
@@ -185,8 +205,9 @@ export default function Section3() {
               </Link>
             </div>
           </Col>
-        </Row>
-      </Container>
+        </Row> */}
+        </Container>
+      </section>
     </section>
   )
 }

@@ -3,6 +3,7 @@ import { Col, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 export default function Cards({ image, rating, title, paragraph, price, renderRatingIcons }) {
   return (
+    <>
     <Col sm={6} lg={4} xl={3} className="mb-4">
          <Card className="overflow-hidden">
         <div className="overflow-hidden">
@@ -31,7 +32,11 @@ export default function Cards({ image, rating, title, paragraph, price, renderRa
             </div>
           </div>
         </Card.Body>
+       
       </Card>
+      
         </Col>
+        
+        </>
   )
 }
