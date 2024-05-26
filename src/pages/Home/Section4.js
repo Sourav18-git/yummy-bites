@@ -13,7 +13,7 @@ export default function Section4() {
                             <img src={PromotionImage} className="img-fluid" alt="Promotion" />
                         </Col>
                         <Col lg={6} className='px-5'>
-                            <h2>Nothing brings people together like a good burger</h2>
+                            <h2>Nothing brings people together like a good Food</h2>
                             <p>
                                 Semper lacus cursus porta primis ligula risus tempus and
                                 sagittis ipsum mauris lectus laoreet purus ipsum tempor enim

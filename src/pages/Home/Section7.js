@@ -15,7 +15,7 @@ export default function Section7() {
             magna
           </p>
           <Link to="/" className="btn btn_red px-4 py-2 rounded-0">
-            Call: +91900900009
+            Call: +91 9009000099
           </Link>
         </Col>
       </Row>

@@ -10,6 +10,7 @@
     padding-bottom: 90px;
     /* filter: blur(8px);
     -webkit-filter: blur(8px); */
+
   }
 
   .hero_section .price_badge {
@@ -17,18 +18,18 @@
       center;
     background-size: cover;
     position: absolute;
-    top: 140px;
-    right: 220px;
+    top: 130px;
+    right: 260px;
     width: 180px;
     height: 176px;
     text-align: center;
   }
-  .img-fluid{
-    width: 500px;
-    height: 700px;
-    /* position: absolute; */
-    top: 15px;
-    right: 70px;
+ .Biriyani{
+    width: 600px;
+    height: 1000px;
+    position: absolute;
+    top: -160px;
+    right: 300px;
 
   }
   #plus_icon{
@@ -36,10 +37,20 @@
   }
   #drinks_img{
     position:relative;
-    width: 190px;
-    height: 270px;
-    top: 32%;
-    right: 7px;
+    width: 290px;
+    height: 470px;
+    top: 99px;
+    /* right: 107px; */
+    left: 460px;
+  }
+  .plus{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-top: 17px;
+    /* display: none; */
+    top: 300px;
+    left:420px ;
   }
   #hero_section_Cotaniner2{
     margin-top: 50px;
@@ -76,6 +87,7 @@
   }
   .hero_section .hero_text p {
     padding: 0 5%;
+    margin-bottom: 56px;
   }
 /* home about */
 
@@ -334,6 +346,7 @@ height: 900px;
   padding: 70px 0 40px;
   background: var(--light-grey);
   overflow: hidden;
+  height: 230px;
 }
 .brand_section .brand_img{
  max-width: 100px;
@@ -356,7 +369,7 @@ height: 900px;
 /* Home blog Section 6 */
 .blog_section{
   padding: 80px 0 50px;
-  background: url("../assets/blog/review2.jpg");
+  background: url("../assets/blog/review_3.jpg");
   background-size: cover;
   background-attachment: fixed;
   overflow: hidden;
@@ -410,9 +423,145 @@ height: 900px;
   font-size: 22px;
   font-weight: 700;
 }
+/* footer section  */
+footer{
+  padding-top: 80px;
+}
+footer h5{
+  color: var(--light-black);
+  line-height: 1;
+  margin-bottom: 25px;
+}
+footer p{
+  margin-bottom:3px ;
+  font-size: 18px;
+}
+footer .calling{
+  font-size: 25px;
+  font-weight: 800;
+  color: var(--yellow);
+}
+footer ul li{
+  display: inline-block;
+  margin-right:20px ;
+  font-size: 20px;
+  cursor: pointer;
+}
+footer .copy_right{
+  border-top:1px solid var(--light-grey-2) ;
+margin-top: 60px;
+padding: 20px 0;
+}
+footer .copy_right ul li span{
+  color: var(--light-red);
+   font-weight: 600;
+}
+footer .copy_right ul li{
+  font-size: 15px;
+  padding: 10px;
+  position: relative;
+}
+footer .copy_right ul li:after{
+  content: "|";
+  padding-left: 11px;
+  position: absolute;
+  top: 9px;
+  right: -10px;
+}
+footer .copy_right ul li:last-child::after{
+  display: none;
 
+}
 
-  @media (max-width: 992px) {
+/* scroll top */
+/* Scroll Top */
+.scroll_top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 99;
+  cursor: pointer;
+  width: 2.7rem;
+  height: 2.7rem;
+  line-height: 3rem;
+  text-align: center;
+  background: var(--light-red);
+  border-radius: 10%;
+}
+.scroll_top i {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--white);
+}
+@media (max-width: 1400px){
+ 
+    /* font-size: 20px; */
+    .hero_section .hero_text h1{
+      font-size: 6rem;
+    }
+  
+  .plus{
+    width: 40px;
+    height: 40px;
+    top: 300px;
+    left:320px
+  }
+  .Biriyani{
+    width: 600px;
+    height: 1000px;
+    top: -190px;
+    right: 260px;
+}
+#drinks_img{
+
+  width: 270px;
+  height: 380px;
+  top: 150px;
+  /* right: 107px; */
+  left: 340px;
+}
+}
+@media (max-width: 1200px){
+  .hero_section .hero_text h1{
+    font-size: 5rem;
+  }
+ .plus{ position: absolute;
+    width: 40px;
+    height: 40px;
+    margin-top: 17px;
+    /* display: none; */
+    top: 250px;
+    left:320px ;}
+
+    .Biriyani{
+      width: 400px;
+      height: 800px;
+      position: absolute;
+      top: -150px;
+      right: 260px;
+  
+    }
+    #drinks_img{
+      position:relative;
+      width: 190px;
+      height: 280px;
+      top: 129px;
+      /* right: 107px; */
+      left: 340px;
+    }
+    .hero_section .price_badge {
+      background: url("../assets/hero/price-badge-yellow.png") no-repeat center
+        center;
+      background-size: cover;
+      position: absolute;
+      top: 40px;
+      right: 190px;
+      width: 180px;
+      height: 176px;
+      text-align: center;
+    }
+}
+  @media (max-width: 1000px) {
     /* Home About 2.0 */
     .about_section {
         /* padding-top: 80px; */
@@ -427,6 +576,42 @@ height: 900px;
     .about_box p {
       padding: 0;
     }
+   
+    /* #drinks_img{
+      position: absolute;
+      left: -20px;
+  } */
+  .hero_section .hero_text h1{
+    margin-top: -230px;
+  }
+  #drinks_img{
+    /* position: absolute; */
+    position: relative;
+    left: -70px;
+    width: 190px;
+    height: 270px;
+    top: 30px;
+}
+.Biriyani{
+  width: 500px;
+  height: 700px;
+  /* position: absolute; */
+  top: 15px;
+  right: 10px;
+  position: relative;
+
+}
+.hero_section .price_badge{
+  top: 100px;
+
+}
+    .plus{
+     /* display: none; */
+     top: 350px;
+     left: 430px;
+     width: 30px;
+     height: 30px;
+    }
 }
   /* Mobile media query */
   @media(max-width:767px){
@@ -439,8 +624,14 @@ height: 900px;
     right: 20px;
     }
     #drinks_img{
-        position: absolute;
+        /* position: relative; */
         left: -20px;
+        width: 190px;
+        height: 270px;
+        top: -450px;
+    }
+    .plus{
+      display: none;
     }
     #hero_section_Cotaniner2{
         margin-top: -190px;
@@ -448,6 +639,16 @@ height: 900px;
     #plus_icon{
         display: none;
     }
+    .Biriyani{
+      width: 500px;
+      height: 700px;
+      /* position: absolute; */
+      top: 15px;
+      right: 10px;
+      position: relative;
+  
+    }
+  
 /* Menu Setion3 */
 .cardImage {
   width: 100%;
@@ -459,7 +660,8 @@ height: 900px;
 }
 .menu_section .para {
   padding: 5px 0px;
-
+margin-bottom: 20px;
+margin-top: -10px;
   
 }
 /* home shop  */
@@ -472,6 +674,7 @@ height: 900px;
 }
 .brand_section{
   padding: 50px 0 10px;
+  height: 160px;
 }
 .brand_section .brand_img{
   width: 70px;
@@ -480,5 +683,12 @@ height: 900px;
 .brand_section .brand_img img{
   width: 80px;
   height: 80px;
+}
+.blog_section{
+
+  background: url("../assets/blog/review_3.1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
 }
   }
