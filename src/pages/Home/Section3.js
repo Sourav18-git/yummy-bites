@@ -144,16 +144,16 @@ export default function Section3() {
             {/* <div className="search">
             <input placeholder='Search Food' onChange={searchFood} />
           </div> */}
-            <div class="container">
+            <div className="container">
 
-              <div class="row height d-flex justify-content-center align-items-center">
+              <div className="row height d-flex justify-content-center align-items-center">
 
-                <div class="col-md-6">
+                <div className="col-md-6">
 
-                  <div class="form">
-                    <i class="fa fa-search"></i>
-                    <input type="text" class="form-control form-input" placeholder="Search your favourite item..." />
-                    <span class="left-pan"><i class="fa fa-microphone"></i></span>
+                  <div className="form">
+                    <i className="fa fa-search"></i>
+                    <input type="text" className="form-control form-input" placeholder="Search your favourite item..." />
+                    <span className="left-pan"><i className="fa fa-microphone"></i></span>
                   </div>
 
                 </div>
@@ -176,7 +176,7 @@ export default function Section3() {
             ))}
           </Row>
           <div>
-          {/* <button type="button" class="btn btn-primary" disabled> Previous</button>
+          {/* <button type="button" className="btn btn-primary" disabled> Previous</button>
           <button>Next</button>
        */}
         <div className="next_Page">
